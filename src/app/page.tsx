@@ -7,13 +7,13 @@ import styles from "../styles/page.module.scss";
 import Header from "@/components/organisms/Header";
 import Footer from "@/components/organisms/Footer";
 import Hero from "@/components/organisms/Hero";
+import About from "@/components/organisms/About";
 
 export default function Home() {
   return (
     <div className={styles.main}>
-      <Header />
       <Hero />
-      <h1>hello</h1>
+      <About />
       <Footer />
     </div>
   );

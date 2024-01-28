@@ -1,0 +1,8 @@
+.about {
+  width: 100%;
+  height: 2000px;
+  position: relative; // 必要に応じて調整
+  z-index: 1; // 前面に配置するためのz-index
+  margin-top: 100vh; // .heroセクションの高さ分のマージン
+  background-color: aqua;
+}
