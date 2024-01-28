@@ -20,7 +20,7 @@
 }
 
 .line {
-  background-color: #2b00ff; // ラインの色
+  background-color: var(--main-blue); // ラインの色
   width: 40px;
   transition: all 0.3s ease;
 
