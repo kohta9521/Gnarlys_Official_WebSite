@@ -2,6 +2,7 @@ import React from "react";
 
 // scss import
 import styles from "./styles/MenuScreen.module.scss";
+import ListItem from "../atoms/ListItem";
 
 // props type
 export type MenuScreenProps = {
@@ -12,9 +13,9 @@ const MenuScreen = ({ isOpen }: MenuScreenProps) => {
   if (!isOpen) return null;
   return (
     <div className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
-      <a href="/">Section 1</a>
-      <a href="/">Section 2</a>
-      <a href="/">Section 3</a>
+      <ListItem text="about" link="/" />
+      <ListItem text="about2" link="/" />
+      <ListItem text="about3" link="/" />
     </div>
   );
 };

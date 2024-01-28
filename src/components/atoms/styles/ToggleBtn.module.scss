@@ -21,16 +21,24 @@
 
 .line {
   background-color: #2b00ff; // ラインの色
-  height: 2px;
-  width: 30px;
+  width: 40px;
   transition: all 0.3s ease;
 
   &:nth-child(1) {
-    transform: translateY(8px);
+    height: 4px;
+    transform: translateY(6px);
   }
-
+  &:nth-child(2) {
+    height: 6px;
+    transform: translateY(10px);
+  }
   &:nth-child(3) {
-    transform: translateY(-8px);
+    height: 8px;
+    transform: translateY(14px);
+  }
+  &:nth-child(4) {
+    height: 12px;
+    transform: translateY(18px);
   }
 }
 
@@ -38,14 +46,20 @@
   background-color: #00bbff; // アクティブ時の色
 
   &:nth-child(1) {
+    height: 6px;
     transform: rotate(45deg) translate(5px, 5px);
   }
 
   &:nth-child(2) {
+    height: 6px;
     opacity: 0;
   }
 
   &:nth-child(3) {
+    height: 6px;
     transform: rotate(-45deg) translate(7px, -7px);
+  }
+  &:nth-child(4) {
+    display: none;
   }
 }

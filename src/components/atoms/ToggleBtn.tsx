@@ -16,6 +16,7 @@ const ToggleBtn = ({ isOpen, toggle }: ToggleBtnProps) => {
         <span className={`${styles.line} ${isOpen ? styles.open : ""}`}></span>
         <span className={`${styles.line} ${isOpen ? styles.open : ""}`}></span>
         <span className={`${styles.line} ${isOpen ? styles.open : ""}`}></span>
+        <span className={`${styles.line} ${isOpen ? styles.open : ""}`}></span>
       </div>
     </button>
   );
