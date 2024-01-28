@@ -1,0 +1,51 @@
+.menuButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; // 位置を固定
+  top: 10px; // トップからの距離
+  right: 10px; // 右からの距離
+  z-index: 1100; // メニューよりも上に表示するためのz-index
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+}
+
+.line {
+  background-color: #2b00ff; // ラインの色
+  height: 2px;
+  width: 30px;
+  transition: all 0.3s ease;
+
+  &:nth-child(1) {
+    transform: translateY(8px);
+  }
+
+  &:nth-child(3) {
+    transform: translateY(-8px);
+  }
+}
+
+.open {
+  background-color: #00bbff; // アクティブ時の色
+
+  &:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  &:nth-child(2) {
+    opacity: 0;
+  }
+
+  &:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+}

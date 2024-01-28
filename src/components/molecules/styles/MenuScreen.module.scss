@@ -1,0 +1,31 @@
+.menu {
+  position: fixed;
+  top: 0; // メニューの初期位置を上部に設定
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0; // メニュー背景色
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%); // 初期状態では画面外（下部）
+  transition: transform 0.5s ease-in-out;
+  z-index: 1000;
+
+  // メニューが開いている場合
+  &.open {
+    transform: translateY(0); // 画面全体を覆う
+  }
+
+  a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+}
