@@ -7,6 +7,7 @@ import styles from "./styles/Header.module.scss";
 // components import
 import ToggleBtn from "@/components/atoms/ToggleBtn";
 import MenuScreen from "@/components/molecules/MenuScreen";
+import Logo from "../atoms/Logo";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +18,11 @@ const Header = () => {
 
   return (
     <div className={styles.header}>
-      <ToggleBtn isOpen={isOpen} toggle={toggle} />
-      <MenuScreen isOpen={isOpen} />
-      {/* <h1>header</h1> */}
+      <div className={styles.container}>
+        <Logo id={1} link="/" size="medium" />
+        <ToggleBtn isOpen={isOpen} toggle={toggle} />
+        <MenuScreen isOpen={isOpen} />
+      </div>
     </div>
   );
 };
