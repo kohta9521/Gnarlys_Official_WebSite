@@ -9,8 +9,10 @@ import Header from "./Header";
 const Hero = () => {
   return (
     <>
-      <Header />
-      <div className={styles.hero}></div>
+      <div className={styles.bgImg}>
+        <Header />
+        <div className={styles.hero}></div>
+      </div>
     </>
   );
 };
