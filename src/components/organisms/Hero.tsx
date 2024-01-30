@@ -11,7 +11,9 @@ const Hero = () => {
     <>
       <div className={styles.bgImg}>
         <Header />
-        <div className={styles.hero}></div>
+        <div className={styles.hero}>
+          
+        </div>
       </div>
     </>
   );

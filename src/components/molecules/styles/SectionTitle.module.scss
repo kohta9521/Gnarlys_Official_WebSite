@@ -1,0 +1,27 @@
+.sectionTitle {
+  margin: 20px 0;
+
+  .enTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .jaTitle {
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  &.left {
+    text-align: left;
+  }
+
+  &.center {
+    text-align: center;
+  }
+
+  &.right {
+    text-align: right;
+  }
+}
