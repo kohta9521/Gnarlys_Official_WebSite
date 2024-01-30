@@ -2,6 +2,8 @@ import React from "react";
 
 // scss import
 import styles from "./styles/MenuScreen.module.scss";
+
+// components import
 import ListItem from "../atoms/ListItem";
 
 // props type

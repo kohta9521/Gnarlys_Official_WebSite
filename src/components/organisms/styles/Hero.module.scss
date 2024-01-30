@@ -5,11 +5,13 @@
   width: 100%;
   height: 100vh;
   z-index: -1;
-  background-image: url("/images/top.jpg");
+  // background-image: url("/images/top.jpg");
   background-size: cover;
 }
 
 .hero {
+  position: absolute;
   width: 100%;
   height: 100vh;
+  z-index: 1;
 }
