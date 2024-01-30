@@ -4,3 +4,19 @@
     color: var(--main-blue);
   }
 }
+
+// props
+.small {
+  width: 200px;
+}
+.medium {
+  width: 400px;
+}
+.large {
+  width: 550px;
+}
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+}
