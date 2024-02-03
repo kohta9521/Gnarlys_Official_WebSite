@@ -3,7 +3,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import ToggleBtn, { ToggleBtnProps } from "../ToggleBtn";
 
 export default {
-  title: "Components/ToggleBtn",
+  title: "Components/Atoms/ToggleBtn",
   component: ToggleBtn,
   tags: ["autodocs"],
   argTypes: {
