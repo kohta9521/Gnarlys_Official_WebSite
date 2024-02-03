@@ -30,12 +30,6 @@ const meta = {
         type: "text",
       },
     },
-    bg_image: {
-      description: "ボタンの背景画像",
-      control: {
-        type: "text",
-      },
-    },
   },
 } satisfies Meta<typeof FooterHoverBtn>;
 
@@ -49,7 +43,6 @@ export const Default: FooterHoverBtn = {
     title: "title",
     desc: "description",
     link: "/",
-    bg_image: "https://via.placeholder.com/150",
   },
 };
 
@@ -59,6 +52,5 @@ export const LongDesc: FooterHoverBtn = {
     title: "titletitletitle",
     desc: "descriptiondescriptiondescriptiondescriptiondescription",
     link: "/",
-    bg_image: "https://via.placeholder.com/150",
   },
 };
